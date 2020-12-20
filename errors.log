@@ -1,0 +1,2 @@
+gru 20, 2020 12:57:54 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59e5ddf: startup date [Sun Dec 20 12:57:54 CET 2020]; root of context hierarchy
