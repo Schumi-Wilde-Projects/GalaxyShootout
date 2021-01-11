@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AjcSettings">
+    <option name="ajcPath" value="$USER_HOME$/Downloads/aspectjtools-1.9.5.jar" />
+  </component>
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="ajc" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="game" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="galaxy-shootout" target="11" />
+      <module name="game" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
