@@ -1,2 +1,19 @@
-gru 20, 2020 12:57:54 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59e5ddf: startup date [Sun Dec 20 12:57:54 CET 2020]; root of context hierarchy
+sty 11, 2021 8:30:30 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@29444d75: startup date [Mon Jan 11 20:30:30 CET 2021]; root of context hierarchy
+Exception in thread "main" com.badlogic.gdx.utils.GdxRuntimeException: Couldn't load file: img/kosmos.jpg
+	at com.badlogic.gdx.graphics.Pixmap.<init>(Pixmap.java:148)
+	at com.badlogic.gdx.graphics.TextureData$Factory.loadFromFile(TextureData.java:98)
+	at com.badlogic.gdx.graphics.Texture.<init>(Texture.java:122)
+	at com.badlogic.gdx.graphics.Texture.<init>(Texture.java:114)
+	at com.badlogic.gdx.graphics.Texture.<init>(Texture.java:110)
+	at schumiwilde.projects.menu.SettingsScreen.render(SettingsScreen.java:115)
+	at com.badlogic.gdx.Game.render(Game.java:46)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Window.update(Lwjgl3Window.java:403)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.loop(Lwjgl3Application.java:141)
+	at com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application.<init>(Lwjgl3Application.java:117)
+	at schumiwilde.projects.GameRun.run(GameRun.java:14)
+	at schumiwilde.projects.GalaxyShootout.main(GalaxyShootout.java:14)
+Caused by: java.io.IOException: Error loading pixmap: Out of memory
+	at com.badlogic.gdx.graphics.g2d.Gdx2DPixmap.<init>(Gdx2DPixmap.java:85)
+	at com.badlogic.gdx.graphics.Pixmap.<init>(Pixmap.java:146)
+	... 11 more
