@@ -71,6 +71,7 @@ public class HighScoreScreen implements Screen {
                 parent.changeGameScreen(Orchestrator.MENU_SCREEN);
             }
         });
+
         table.add(backButton).colspan(2);
     }
 
