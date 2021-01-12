@@ -28,11 +28,11 @@ public class MainMenuScreen implements Screen {
         this.parent = parent;
         this.spriteBatch = new SpriteBatch();
         stage = new Stage(new ScreenViewport());
-        Gdx.input.setInputProcessor(stage);
     }
 
     @Override
     public void show() {
+        Gdx.input.setInputProcessor(stage);
         stage.clear();
         Skin skin = new Skin(Gdx.files.internal("star-soldier/skin/star-soldier-ui.json"));
 
@@ -74,6 +74,13 @@ public class MainMenuScreen implements Screen {
             }
         });
 
+        highScoreButton.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent changeEvent, Actor actor) {
+                parent.changeGameScreen(Orchestrator.HIGH_SCORE_SCREEN);
+            }
+        });
+
         exitButton.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent changeEvent, Actor actor) {
@@ -91,6 +98,7 @@ public class MainMenuScreen implements Screen {
         spriteBatch.begin();
         backgroundImage.draw(spriteBatch);
         spriteBatch.end();
+        backgroundTexture.dispose();
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 20f));
         stage.draw();
     }
