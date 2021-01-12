@@ -1,9 +1,11 @@
 schumiwilde\projects\menu\EndGameScreen.class
 schumiwilde\projects\menu\GameScreen.class
 schumiwilde\projects\menu\HighScoreScreen.class
+schumiwilde\projects\HighScores.class
 schumiwilde\projects\menu\SettingsScreen$2.class
 schumiwilde\projects\menu\settings\GameSettings.class
 schumiwilde\projects\menu\SettingsScreen.class
+schumiwilde\projects\menu\HighScoreScreen$1.class
 schumiwilde\projects\menu\LoadingScreen.class
 schumiwilde\projects\menu\SettingsScreen$1.class
 schumiwilde\projects\menu\GameOverScreen.class
@@ -13,3 +15,4 @@ schumiwilde\projects\menu\MainMenuScreen$2.class
 schumiwilde\projects\menu\MainMenuScreen.class
 schumiwilde\projects\menu\SettingsScreen$4.class
 schumiwilde\projects\menu\SettingsScreen$3.class
+schumiwilde\projects\menu\MainMenuScreen$3.class
