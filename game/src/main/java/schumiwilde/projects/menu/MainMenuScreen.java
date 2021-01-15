@@ -67,6 +67,13 @@ public class MainMenuScreen implements Screen {
         Label versionNumberLabel = new Label("Wersja v0.1 alpha", skin);
         stage.addActor(versionNumberLabel);
 
+        playButton.addListener(new ChangeListener() {
+            @Override
+            public void changed(ChangeEvent changeEvent, Actor actor) {
+                parent.changeGameScreen(Orchestrator.GAME_SCREEN);
+            }
+        });
+
         settingsButton.addListener(new ChangeListener() {
             @Override
             public void changed(ChangeEvent changeEvent, Actor actor) {

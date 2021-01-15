@@ -11,6 +11,7 @@ public class GameRun {
         Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
         config.setTitle("GalaxyShootout");
         config.setWindowedMode(1024, 768);
+        config.setResizable(false);
         new Lwjgl3Application(new Orchestrator(), config);
     }
 }

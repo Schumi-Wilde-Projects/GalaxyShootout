@@ -12,6 +12,7 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\classes
 -s
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\generated-sources\aspectj-maven-plugin
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Config.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\controller\KeyboardControl.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GalaxyShootout.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Game.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GameRun.java
@@ -23,6 +24,7 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\pro
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\HighScoreScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\LoadingScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\MainMenuScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\PauseScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\settings\GameSettings.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\SettingsScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Orchestrator.java
