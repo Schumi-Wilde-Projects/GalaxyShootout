@@ -12,14 +12,16 @@ public class Orchestrator extends Game {
     public final static int LOADING_SCREEN = 2;
     public final static int HIGH_SCORE_SCREEN = 3;
     public final static int GAME_SCREEN = 4;
-    public final static int GAME_OVER_SCREEN = 5; // Ekran końca gry
-    public final static int END_GAME_SCREEN = 6; // Ekran wyjścia z gry (not to be confused lol)
+    public final static int PAUSE_SCREEN = 5;
+    public final static int GAME_OVER_SCREEN = 6; // Ekran końca gry
+    public final static int END_GAME_SCREEN = 7; // Ekran wyjścia z gry (not to be confused lol)
 
     private MainMenuScreen mainMenuScreen;
     private LoadingScreen loadingScreen;
     private HighScoreScreen highScoreScreen;
     private SettingsScreen settingsScreen;
     private GameScreen gameScreen;
+    private PauseScreen pauseScreen;
     private GameOverScreen gameOverScreen;
     private EndGameScreen endGameScreen;
 
@@ -64,6 +66,12 @@ public class Orchestrator extends Game {
                     gameScreen = new GameScreen(this);
                 }
                 this.setScreen(gameScreen);
+                break;
+            case PAUSE_SCREEN:
+                if (pauseScreen == null) {
+                    pauseScreen = new PauseScreen(this);
+                }
+                this.setScreen(pauseScreen);
                 break;
             case GAME_OVER_SCREEN:
                 if (gameOverScreen == null) {
