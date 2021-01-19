@@ -34,7 +34,7 @@ public class Orchestrator extends Game {
         setScreen(loadingScreen);
     }
 
-    // Zastąpić to później stanami
+    // TODO Zastąpić to później stanami
     public void changeGameScreen(int state) {
         switch (state) {
             case MENU_SCREEN:

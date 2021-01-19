@@ -1,7 +1,6 @@
 package schumiwilde.projects.menu;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
@@ -15,13 +14,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import schumiwilde.projects.Orchestrator;
 import schumiwilde.projects.controller.KeyboardControl;
-
-import java.util.ArrayList;
+import schumiwilde.projects.player.Player;
 
 public class GameScreen implements Screen {
     private Orchestrator parent;
@@ -33,12 +30,13 @@ public class GameScreen implements Screen {
 
     private Texture backgroundTexture;
     private Sprite backgroundImage;
+    private Table healthTable;
+    private Player playerShip;
     private final SpriteBatch spriteBatch;
     private final int randomPicture = (int) Math.floor(Math.random() * 3) + 1;
 
     // Tymczasowe zmienne!
     private int userScore = 0;
-    private int livesLeft = 3;
 
     public GameScreen(Orchestrator parent) {
         this.parent = parent;
@@ -56,6 +54,14 @@ public class GameScreen implements Screen {
 
         Skin skin = new Skin(Gdx.files.internal("star-soldier/skin/star-soldier-ui.json"));
 
+        playerShip = Player.getInstance().reset();
+
+        if(parent.getSettings().isRtxEnabled())
+            playerShip.setRtxOn();
+
+        playerShip.setPosition(Gdx.graphics.getWidth() / 2f - 50,
+                50);
+
 //        Label livesLeftLabel = new Label("Zycia: " + livesLeft, skin);
 //        livesLeftLabel.setPosition(0,Gdx.graphics.getHeight() - 20);
 //        livesLeftLabel.setAlignment(Align.topLeft);
@@ -64,9 +70,9 @@ public class GameScreen implements Screen {
         scoreLabel.setAlignment(Align.topRight);
         Label currentWeaponLabel = new Label("Bron: ", skin);
 
-        Table healthTable = new Table();
+        healthTable = new Table();
         healthTable.setFillParent(true);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < playerShip.getHP(); i++) {
             if (parent.getSettings().isRtxEnabled()) {
                 Texture heartTexture = new Texture("img/rtxon/heart.png");
                 Image heartImage = new Image(heartTexture);
@@ -90,10 +96,18 @@ public class GameScreen implements Screen {
         if (keyboardControl.escapePressed) {
             parent.changeGameScreen(Orchestrator.PAUSE_SCREEN);
         }
+        if(keyboardControl.leftPressed && playerShip.getX() > 0) {
+            playerShip.move(-5);
+        }
+        if(keyboardControl.rightPressed && playerShip.getX() < Gdx.graphics.getWidth() - 100) {
+            playerShip.move(5);
+        }
+
         backgroundTexture = new Texture("img/game_cosmos" + randomPicture + ".jpg");
         backgroundImage = new Sprite(backgroundTexture);
         spriteBatch.begin();
         backgroundImage.draw(spriteBatch);
+        spriteBatch.draw(playerShip, playerShip.getX(), playerShip.getY(), 100, 100);
         spriteBatch.end();
         backgroundTexture.dispose();
         stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
@@ -121,7 +135,9 @@ public class GameScreen implements Screen {
     }
 
     @Override
-    public void dispose() {
+    public void dispose()
+    {
         shapeRenderer.dispose();
+        spriteBatch.dispose();
     }
 }
