@@ -1,18 +1,18 @@
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/GameScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Orchestrator.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/HighScoreScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/controller/KeyboardControl.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/player/Player.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/PauseScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Game.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/LoadingScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/GameRun.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/MainMenuScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/SettingsScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Config.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/settings/GameSettings.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/EndGameScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/GameOverScreen.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Generator.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/HighScores.java
-/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/GalaxyShootout.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GalaxyShootout.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\LoadingScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\controller\KeyboardControl.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\EndGameScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\player\Player.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Orchestrator.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Config.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Game.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\PauseScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\settings\GameSettings.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GameRun.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\HighScores.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\MainMenuScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Generator.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameOverScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\HighScoreScreen.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\SettingsScreen.java

@@ -1,2 +1,2 @@
-sty 19, 2021 7:55:21 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@23faf8f2: startup date [Tue Jan 19 19:55:21 CET 2021]; root of context hierarchy
+sty 23, 2021 6:01:41 PM org.springframework.context.annotation.AnnotationConfigApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@29444d75: startup date [Sat Jan 23 18:01:41 CET 2021]; root of context hierarchy
