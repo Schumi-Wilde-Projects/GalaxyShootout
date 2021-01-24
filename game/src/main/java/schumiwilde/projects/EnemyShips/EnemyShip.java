@@ -6,32 +6,25 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import schumiwilde.projects.player.Player;
 
 
-public class EnemyShip extends Sprite {
+public abstract class EnemyShip extends Sprite {
     private int HP;
     private Weapons weapon;
     private float x,y,vx=0,vy=0;
-    private EnemyMovements movement;
-    public EnemyShip(Texture texture,int hp,Weapons weapon,EnemyMovements movement)
+
+    public EnemyShip(Texture texture,int hp,Weapons weapon)
     {
         super(texture);
-
         this.HP=hp;
         this.weapon=weapon;
-        this.movement=movement;
-
     }
-    public void setXY(float X,float Y)
+    public void setXY(float x,float y)
     {
         this.x=x;
         this.y=y;
     }
-    public void setRtxOn() {
-        setTexture(new Texture("img/rtxon/pngkey.com-spaceship-png-130236.png"));
-    }
+    public abstract void setRtxOn();
 
-    public void setRtxOff() {
-        setTexture(new Texture("img/rtxoff/ClipartKey_146283.png"));
-    }
+    public abstract void setRtxOff();
 
 
 
@@ -66,9 +59,6 @@ public class EnemyShip extends Sprite {
     {
         return y;
     }
-    public void move()
-    {
-        movement.move(this);
-    }
+    public abstract void move();
 }
 

@@ -13,6 +13,14 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\classes
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\generated-sources\aspectj-maven-plugin
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Config.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\controller\KeyboardControl.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\AgresiveMovement.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\AgresiveShip.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\DefensiveMovement.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\DefensiveShip.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\EnemyMovements.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\EnemyShip.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\SuicudeMovement.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\SuicudeShip.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GalaxyShootout.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Game.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GameRun.java
@@ -29,6 +37,9 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\pro
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\SettingsScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Orchestrator.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\player\Player.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\Score.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\ScoreProxy.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\StageScore.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\ExitState.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\GameOverState.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\HighScoreState.java
@@ -38,3 +49,11 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\pro
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\OptionsState.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\PauseState.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\State.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\AmountOfBulletsUpgrade.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\BasicWeapon.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\DamageUpgrade.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\PlasmaWeapon.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\RocketWeapon.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\SpeedUpgrade.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\Weapons.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\WeaponUpgrade.java
