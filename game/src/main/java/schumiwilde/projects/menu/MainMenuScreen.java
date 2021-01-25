@@ -64,7 +64,7 @@ public class MainMenuScreen implements Screen {
         table.add(exitButton).fill().uniformX();
         table.row().pad(10, 0, 10, 0);
 
-        Label versionNumberLabel = new Label("Wersja v0.1 alpha", skin);
+        Label versionNumberLabel = new Label("Wersja v0.6 beta", skin);
         stage.addActor(versionNumberLabel);
 
         playButton.addListener(new ChangeListener() {

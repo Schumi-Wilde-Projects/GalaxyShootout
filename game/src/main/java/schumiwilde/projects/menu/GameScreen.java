@@ -19,6 +19,8 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import schumiwilde.projects.Orchestrator;
 import schumiwilde.projects.controller.KeyboardControl;
 import schumiwilde.projects.player.Player;
+import schumiwilde.projects.states.InGameState;
+import schumiwilde.projects.states.PauseState;
 
 public class GameScreen implements Screen {
     private Orchestrator parent;
@@ -62,9 +64,6 @@ public class GameScreen implements Screen {
         playerShip.setPosition(Gdx.graphics.getWidth() / 2f - 50,
                 50);
 
-//        Label livesLeftLabel = new Label("Zycia: " + livesLeft, skin);
-//        livesLeftLabel.setPosition(0,Gdx.graphics.getHeight() - 20);
-//        livesLeftLabel.setAlignment(Align.topLeft);
         Label scoreLabel = new Label("Wynik: " + userScore, skin);
         scoreLabel.setPosition(Gdx.graphics.getWidth() - 110,Gdx.graphics.getHeight() - 20);
         scoreLabel.setAlignment(Align.topRight);
@@ -91,27 +90,30 @@ public class GameScreen implements Screen {
 
     @Override
     public void render(float v) {
-        Gdx.gl.glClearColor(0f, 0f, 0f, 1);
-        Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-        if (keyboardControl.escapePressed) {
-            parent.changeGameScreen(Orchestrator.PAUSE_SCREEN);
-        }
-        if(keyboardControl.leftPressed && playerShip.getX() > 0) {
-            playerShip.move(-5);
-        }
-        if(keyboardControl.rightPressed && playerShip.getX() < Gdx.graphics.getWidth() - 100) {
-            playerShip.move(5);
-        }
+        if (parent.getCurrentState() instanceof InGameState) {
+            Gdx.gl.glClearColor(0f, 0f, 0f, 1);
+            Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+            if (keyboardControl.escapePressed) {
+                parent.changeGameScreen(Orchestrator.PAUSE_SCREEN);
+                keyboardControl.escapePressed = false;
+            }
+            if (keyboardControl.leftPressed && playerShip.getX() > 0) {
+                playerShip.move(-5);
+            }
+            if (keyboardControl.rightPressed && playerShip.getX() < Gdx.graphics.getWidth() - 100) {
+                playerShip.move(5);
+            }
 
-        backgroundTexture = new Texture("img/game_cosmos" + randomPicture + ".jpg");
-        backgroundImage = new Sprite(backgroundTexture);
-        spriteBatch.begin();
-        backgroundImage.draw(spriteBatch);
-        spriteBatch.draw(playerShip, playerShip.getX(), playerShip.getY(), 100, 100);
-        spriteBatch.end();
-        backgroundTexture.dispose();
-        stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
-        stage.draw();
+            backgroundTexture = new Texture("img/game_cosmos" + randomPicture + ".jpg");
+            backgroundImage = new Sprite(backgroundTexture);
+            spriteBatch.begin();
+            backgroundImage.draw(spriteBatch);
+            spriteBatch.draw(playerShip, playerShip.getX(), playerShip.getY(), 100, 100);
+            spriteBatch.end();
+            backgroundTexture.dispose();
+            stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
+            stage.draw();
+        }
     }
 
     @Override
@@ -121,12 +123,13 @@ public class GameScreen implements Screen {
 
     @Override
     public void pause() {
-
+        parent.setState(new PauseState());
     }
 
     @Override
     public void resume() {
         Gdx.input.setInputProcessor(keyboardControl);
+        parent.setState(new InGameState());
     }
 
     @Override
