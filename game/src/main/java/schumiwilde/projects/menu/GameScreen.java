@@ -16,19 +16,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
-import schumiwilde.projects.EnemyShips.EnemyShip;
 import schumiwilde.projects.Orchestrator;
 import schumiwilde.projects.controller.KeyboardControl;
 import schumiwilde.projects.player.Player;
-import schumiwilde.projects.stages.Stage1;
-import schumiwilde.projects.stages.Stage2;
-import schumiwilde.projects.stages.StageFacade;
 import schumiwilde.projects.states.InGameState;
 import schumiwilde.projects.states.PauseState;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 public class GameScreen implements Screen {
     private Orchestrator parent;
@@ -40,9 +32,6 @@ public class GameScreen implements Screen {
 
     private Texture backgroundTexture;
     private Sprite backgroundImage;
-    private int levelCounter;
-    private schumiwilde.projects.stages.Stage currentLevel;
-    private List<StageFacade> allLevels;
     private Table healthTable;
     private Player playerShip;
     private final SpriteBatch spriteBatch;
@@ -69,9 +58,7 @@ public class GameScreen implements Screen {
 
         playerShip = Player.getInstance().reset();
 
-        boolean isRtxOn = parent.getSettings().isRtxEnabled();
-
-        if(isRtxOn)
+        if(parent.getSettings().isRtxEnabled())
             playerShip.setRtxOn();
 
         playerShip.setPosition(Gdx.graphics.getWidth() / 2f - 50,
@@ -99,20 +86,6 @@ public class GameScreen implements Screen {
         stage.addActor(scoreLabel);
         stage.addActor(healthTable.top().left());
         stage.addActor(currentWeaponLabel);
-
-        allLevels = new ArrayList<>();
-        allLevels.add(new Stage1(isRtxOn));
-        allLevels.add(new Stage2(isRtxOn));
-        levelCounter = -1;
-        beginNextStage();
-    }
-
-    private void beginNextStage() {
-        levelCounter++;
-        if(levelCounter >= allLevels.size()) {
-            // TODO gra ukończona
-        }
-        currentLevel = allLevels.get(levelCounter).buildStage();
     }
 
     @Override
@@ -136,20 +109,10 @@ public class GameScreen implements Screen {
             spriteBatch.begin();
             backgroundImage.draw(spriteBatch);
             spriteBatch.draw(playerShip, playerShip.getX(), playerShip.getY(), 100, 100);
-            Iterator<EnemyShip> it = currentLevel.getEnemies();
-            while(it.hasNext()) {
-                EnemyShip ship = it.next();
-                spriteBatch.draw(ship, ship.getX(), ship.getY(), 100, 100);
-            }
             spriteBatch.end();
             backgroundTexture.dispose();
             stage.act(Math.min(Gdx.graphics.getDeltaTime(), 1 / 30f));
             stage.draw();
-            it = currentLevel.getEnemies();
-            while(it.hasNext()) {
-                EnemyShip ship = it.next();
-                ship.move();
-            }
         }
     }
 

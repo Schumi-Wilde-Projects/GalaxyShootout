@@ -2,7 +2,6 @@ package schumiwilde.projects.player;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-import schumiwilde.projects.Weapons.*;
 
 public class Player extends Sprite {
 
@@ -10,7 +9,6 @@ public class Player extends Sprite {
     private int HP;
     private int currentLevel;
     private int armorPoints;
-    private Weapons weapon;
 
     public static Player getInstance() {
         if(instance == null)
@@ -38,27 +36,6 @@ public class Player extends Sprite {
         this.HP = 6;
         this.currentLevel = 1;
         this.armorPoints = 0;
-        this.weapon = new BasicWeapon();
-    }
-
-    public void upgradeWeapon(WeaponUpgradeType type) {
-        switch(type) {
-            case DAMAGE_UPGRADE:
-                weapon = new DamageUpgrade(weapon);
-                return;
-            case SPEED_UPGRADE:
-                weapon = new SpeedUpgrade(weapon);
-                return;
-            case AMOUNT_OF_BULLETS_UPGRADE:
-                weapon = new AmountOfBulletsUpgrade(weapon);
-                return;
-            default:
-                weapon = new DamageUpgrade(weapon);
-        }
-    }
-
-    public Weapons getWeapon() {
-        return weapon;
     }
 
     public int getHP() {
