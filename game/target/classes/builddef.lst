@@ -4,56 +4,68 @@
 -encoding
 UTF-8
 -classpath
-C:\Users\Patryk K\.m2\repository\com\badlogicgames\gdx\gdx-backend-lwjgl3\1.9.12\gdx-backend-lwjgl3-1.9.12.jar;C:\Users\Patryk K\.m2\repository\com\badlogicgames\gdx\gdx-platform\1.9.12\gdx-platform-1.9.12-natives-desktop.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-context\4.0.3.RELEASE\spring-context-4.0.3.RELEASE.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-aspects\5.3.2\spring-aspects-5.3.2.jar;C:\Users\Patryk K\.m2\repository\org\aspectj\aspectjrt\1.9.5\aspectjrt-1.9.5.jar;C:\Users\Patryk K\.m2\repository\org\aspectj\aspectjtools\1.9.5\aspectjtools-1.9.5.jar;C:\Users\Patryk K\.m2\repository\com\badlogicgames\gdx\gdx\1.9.12\gdx-1.9.12.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-windows.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-windows-x86.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-linux.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-linux-arm32.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-linux-arm64.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl\3.2.3\lwjgl-3.2.3-natives-macos.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-windows.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-windows-x86.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-linux.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-linux-arm32.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-linux-arm64.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-glfw\3.2.3\lwjgl-glfw-3.2.3-natives-macos.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-windows.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-windows-x86.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-linux.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-linux-arm32.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-linux-arm64.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-jemalloc\3.2.3\lwjgl-jemalloc-3.2.3-natives-macos.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-windows.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-windows-x86.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-linux.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-linux-arm32.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-linux-arm64.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-opengl\3.2.3\lwjgl-opengl-3.2.3-natives-macos.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-windows.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-windows-x86.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-linux.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-linux-arm32.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-linux-arm64.jar;C:\Users\Patryk K\.m2\repository\org\lwjgl\lwjgl-openal\3.2.3\lwjgl-openal-3.2.3-natives-macos.jar;C:\Users\Patryk K\.m2\repository\com\badlogicgames\jlayer\jlayer\1.0.1-gdx\jlayer-1.0.1-gdx.jar;C:\Users\Patryk K\.m2\repository\org\jcraft\jorbis\0.0.17\jorbis-0.0.17.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-aop\4.0.3.RELEASE\spring-aop-4.0.3.RELEASE.jar;C:\Users\Patryk K\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-beans\4.0.3.RELEASE\spring-beans-4.0.3.RELEASE.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-core\4.0.3.RELEASE\spring-core-4.0.3.RELEASE.jar;C:\Users\Patryk K\.m2\repository\commons-logging\commons-logging\1.1.3\commons-logging-1.1.3.jar;C:\Users\Patryk K\.m2\repository\org\springframework\spring-expression\4.0.3.RELEASE\spring-expression-4.0.3.RELEASE.jar;C:\Users\Patryk K\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\classes
+/home/michal/.m2/repository/com/badlogicgames/gdx/gdx-backend-lwjgl3/1.9.12/gdx-backend-lwjgl3-1.9.12.jar:/home/michal/.m2/repository/com/badlogicgames/gdx/gdx-platform/1.9.12/gdx-platform-1.9.12-natives-desktop.jar:/home/michal/.m2/repository/org/springframework/spring-context/4.0.3.RELEASE/spring-context-4.0.3.RELEASE.jar:/home/michal/.m2/repository/org/springframework/spring-aspects/5.3.2/spring-aspects-5.3.2.jar:/home/michal/.m2/repository/org/aspectj/aspectjrt/1.9.5/aspectjrt-1.9.5.jar:/home/michal/.m2/repository/org/aspectj/aspectjtools/1.9.5/aspectjtools-1.9.5.jar:/home/michal/.m2/repository/com/badlogicgames/gdx/gdx/1.9.12/gdx-1.9.12.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-windows.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-windows-x86.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-linux.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-linux-arm32.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-linux-arm64.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl/3.2.3/lwjgl-3.2.3-natives-macos.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-windows.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-windows-x86.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-linux.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-linux-arm32.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-linux-arm64.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-glfw/3.2.3/lwjgl-glfw-3.2.3-natives-macos.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-windows.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-windows-x86.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-linux.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-linux-arm32.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-linux-arm64.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-jemalloc/3.2.3/lwjgl-jemalloc-3.2.3-natives-macos.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-windows.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-windows-x86.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-linux.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-linux-arm32.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-linux-arm64.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-opengl/3.2.3/lwjgl-opengl-3.2.3-natives-macos.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-windows.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-windows-x86.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-linux.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-linux-arm32.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-linux-arm64.jar:/home/michal/.m2/repository/org/lwjgl/lwjgl-openal/3.2.3/lwjgl-openal-3.2.3-natives-macos.jar:/home/michal/.m2/repository/com/badlogicgames/jlayer/jlayer/1.0.1-gdx/jlayer-1.0.1-gdx.jar:/home/michal/.m2/repository/org/jcraft/jorbis/0.0.17/jorbis-0.0.17.jar:/home/michal/.m2/repository/org/springframework/spring-aop/4.0.3.RELEASE/spring-aop-4.0.3.RELEASE.jar:/home/michal/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/home/michal/.m2/repository/org/springframework/spring-beans/4.0.3.RELEASE/spring-beans-4.0.3.RELEASE.jar:/home/michal/.m2/repository/org/springframework/spring-core/4.0.3.RELEASE/spring-core-4.0.3.RELEASE.jar:/home/michal/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/home/michal/.m2/repository/org/springframework/spring-expression/4.0.3.RELEASE/spring-expression-4.0.3.RELEASE.jar:/home/michal/.m2/repository/org/aspectj/aspectjweaver/1.9.6/aspectjweaver-1.9.6.jar:/home/michal/IdeaProjects/GalaxyShootout/game/target/classes
 -aspectpath
-C:\Users\Patryk K\.m2\repository\org\springframework\spring-aspects\5.3.2\spring-aspects-5.3.2.jar
+/home/michal/.m2/repository/org/springframework/spring-aspects/5.3.2/spring-aspects-5.3.2.jar
 -d
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\classes
+/home/michal/IdeaProjects/GalaxyShootout/game/target/classes
 -s
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\generated-sources\aspectj-maven-plugin
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Config.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\controller\KeyboardControl.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\AgresiveMovement.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\AgresiveShip.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\DefensiveMovement.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\DefensiveShip.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\EnemyMovements.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\EnemyShip.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\SuicudeMovement.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\SuicudeShip.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GalaxyShootout.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Game.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GameRun.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Generator.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\HighScores.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\EndGameScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameOverScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\HighScoreScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\LoadingScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\MainMenuScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\PauseScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\settings\GameSettings.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\SettingsScreen.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Orchestrator.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\player\Player.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\Score.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\ScoreProxy.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Score\StageScore.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\ExitState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\GameOverState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\HighScoreState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\InGameState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\LoadingInProgressState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\MainMenuState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\OptionsState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\PauseState.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\states\State.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\AmountOfBulletsUpgrade.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\BasicWeapon.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\DamageUpgrade.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\PlasmaWeapon.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\RocketWeapon.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\SpeedUpgrade.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\Weapons.java
-C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Weapons\WeaponUpgrade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/target/generated-sources/aspectj-maven-plugin
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/settings/GameSettings.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/EndGameScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/GameOverScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/HighScoreScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/LoadingScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/SettingsScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/GameScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/MainMenuScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/menu/PauseScreen.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/GalaxyShootout.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Generator.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Config.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/HighScores.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/controller/KeyboardControl.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Game.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/GameRun.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/player/Player.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Boss/Boss.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Boss/BossMovment.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Boss/Charge.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Boss/NormalMovement.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Boss/SpecialAttack.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/AgresiveMovement.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/DefensiveMovement.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/EnemyMovements.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/EnemyShip.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/SuicudeMovement.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/AggressiveShip.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/DefensiveShip.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/EnemyShips/SuicideShip.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Orchestrator.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Score/Score.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Score/ScoreProxy.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Score/StageScore.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/AmountOfBulletsUpgrade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/BasicWeapon.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/DamageUpgrade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/PlasmaWeapon.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/RocketWeapon.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/SpeedUpgrade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/WeaponUpgrade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/Weapons.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/WeaponType.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/Weapons/WeaponUpgradeType.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/ExitState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/GameOverState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/HighScoreState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/InGameState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/LoadingInProgressState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/MainMenuState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/OptionsState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/PauseState.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/states/State.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/stages/Stage.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/stages/StageBuilder.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/stages/StageFacade.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/stages/Stage1.java
+/home/michal/IdeaProjects/GalaxyShootout/game/src/main/java/schumiwilde/projects/stages/Stage2.java

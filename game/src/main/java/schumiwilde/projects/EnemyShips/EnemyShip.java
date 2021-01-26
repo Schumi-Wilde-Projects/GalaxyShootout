@@ -11,7 +11,7 @@ public abstract class EnemyShip extends Sprite {
     private Weapons weapon;
     private float x,y,vx=0,vy=0;
 
-    public EnemyShip(Texture texture,int hp,Weapons weapon)
+    public EnemyShip(Texture texture, int hp, Weapons weapon)
     {
         super(texture);
         this.HP=hp;
@@ -22,11 +22,10 @@ public abstract class EnemyShip extends Sprite {
         this.x=x;
         this.y=y;
     }
-    public abstract void setRtxOn();
 
-    public abstract void setRtxOff();
-
-
+    public void damage(int value) {
+        HP -= value;
+    }
 
     public int getHP() {
         return HP;
@@ -59,6 +58,11 @@ public abstract class EnemyShip extends Sprite {
     {
         return y;
     }
-    public abstract void move();
+
+    public abstract void move_();
+
+    public void move() {
+        move_();
+    };
 }
 
