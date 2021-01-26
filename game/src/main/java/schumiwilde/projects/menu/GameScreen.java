@@ -16,6 +16,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
+import schumiwilde.projects.Memento;
 import schumiwilde.projects.Orchestrator;
 import schumiwilde.projects.controller.KeyboardControl;
 import schumiwilde.projects.player.Player;
@@ -37,7 +38,6 @@ public class GameScreen implements Screen {
     private final SpriteBatch spriteBatch;
     private final int randomPicture = (int) Math.floor(Math.random() * 3) + 1;
 
-    // Tymczasowe zmienne!
     private int userScore = 0;
 
     public GameScreen(Orchestrator parent) {
@@ -56,13 +56,17 @@ public class GameScreen implements Screen {
 
         Skin skin = new Skin(Gdx.files.internal("star-soldier/skin/star-soldier-ui.json"));
 
-        playerShip = Player.getInstance().reset();
+        if (playerShip != null) {
+            playerShip.getStateFromMemento(parent.getMemento());
+        } else {
+            playerShip = Player.getInstance().reset();
 
-        if(parent.getSettings().isRtxEnabled())
-            playerShip.setRtxOn();
+            if (parent.getSettings().isRtxEnabled())
+                playerShip.setRtxOn();
 
-        playerShip.setPosition(Gdx.graphics.getWidth() / 2f - 50,
-                50);
+            playerShip.setPosition(Gdx.graphics.getWidth() / 2f - 50,
+                    50);
+        }
 
         Label scoreLabel = new Label("Wynik: " + userScore, skin);
         scoreLabel.setPosition(Gdx.graphics.getWidth() - 110,Gdx.graphics.getHeight() - 20);
@@ -95,6 +99,7 @@ public class GameScreen implements Screen {
             Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
             if (keyboardControl.escapePressed) {
                 parent.changeGameScreen(Orchestrator.PAUSE_SCREEN);
+                parent.setMemento(playerShip.saveStateToMemento());
                 keyboardControl.escapePressed = false;
             }
             if (keyboardControl.leftPressed && playerShip.getX() > 0) {

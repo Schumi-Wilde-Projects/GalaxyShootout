@@ -2,6 +2,7 @@ package schumiwilde.projects.player;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
+import schumiwilde.projects.Memento;
 
 public class Player extends Sprite {
 
@@ -28,6 +29,7 @@ public class Player extends Sprite {
         this.HP = 6;
         this.currentLevel = 1;
         this.armorPoints = 0;
+
         return this;
     }
 
@@ -36,6 +38,15 @@ public class Player extends Sprite {
         this.HP = 6;
         this.currentLevel = 1;
         this.armorPoints = 0;
+    }
+
+    public Memento saveStateToMemento() {
+        return new Memento(getX(), getY());
+    }
+
+    public void getStateFromMemento(Memento memento) {
+        setX(memento.getPlayerX());
+        setY(memento.getPlayerY());
     }
 
     public int getHP() {

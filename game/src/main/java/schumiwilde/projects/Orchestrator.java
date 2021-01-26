@@ -5,6 +5,8 @@ import schumiwilde.projects.menu.*;
 import schumiwilde.projects.menu.settings.GameSettings;
 import schumiwilde.projects.states.*;
 
+import java.util.ArrayList;
+
 public class Orchestrator extends Game {
 //    // Tymczasowe pseudo-stany
     public final static int MENU_SCREEN = 0;
@@ -24,6 +26,8 @@ public class Orchestrator extends Game {
     private PauseScreen pauseScreen;
     private GameOverScreen gameOverScreen;
     private EndGameScreen endGameScreen;
+
+    private Memento memento;
 
     private GameSettings settings;
     private State state;
@@ -100,6 +104,14 @@ public class Orchestrator extends Game {
 
     public GameSettings getSettings() {
         return this.settings;
+    }
+
+    public void setMemento(Memento memento) {
+        this.memento = memento;
+    }
+
+    public Memento getMemento() {
+        return memento;
     }
 
     public State getCurrentState() {

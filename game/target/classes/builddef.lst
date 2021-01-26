@@ -11,6 +11,11 @@ C:\Users\Patryk K\.m2\repository\org\springframework\spring-aspects\5.3.2\spring
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\classes
 -s
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\target\generated-sources\aspectj-maven-plugin
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Boss\Boss.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Boss\BossMovment.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Boss\Charge.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Boss\NormalMovement.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Boss\SpecialAttack.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Config.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\controller\KeyboardControl.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\EnemyShips\AgresiveMovement.java
@@ -26,6 +31,7 @@ C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\pro
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\GameRun.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Generator.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\HighScores.java
+C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\Memento.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\EndGameScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameOverScreen.java
 C:\Users\Patryk K\IdeaProjects\GalaxyShootout\game\src\main\java\schumiwilde\projects\menu\GameScreen.java
