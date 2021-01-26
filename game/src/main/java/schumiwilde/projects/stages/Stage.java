@@ -23,7 +23,7 @@ public class Stage {
 
         @Override
         public boolean hasNext() {
-            return currentIndex < enemyShips.size() - 1;
+            return currentIndex < enemyShips.size();
         }
 
         @Override

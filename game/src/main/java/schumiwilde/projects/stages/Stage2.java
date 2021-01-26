@@ -13,11 +13,11 @@ public class Stage2 implements StageFacade {
     @Override
     public Stage buildStage() {
         StageBuilder builder = new StageBuilder(isRtxOn);
-        return builder.init().addAggressiveShip(WeaponType.ROCKET_WEAPON, 15, 250, 600)
-                .addDefensiveShip(WeaponType.BASIC_WEAPON, 15, 200, 600)
-                .addSuicideShip(WeaponType.BASIC_WEAPON, 15, 150, 600)
-                .addDefensiveShip(WeaponType.BASIC_WEAPON, 15, 100, 600)
-                .addAggressiveShip(WeaponType.ROCKET_WEAPON, 15, 50, 600)
+        return builder.init().addAggressiveShip(WeaponType.ROCKET_WEAPON, 15, 400, 400)
+                .addDefensiveShip(WeaponType.BASIC_WEAPON, 15, 350, 400)
+                .addSuicideShip(WeaponType.BASIC_WEAPON, 15, 300, 400, 150, 50)
+                .addDefensiveShip(WeaponType.BASIC_WEAPON, 15, 250, 400)
+                .addAggressiveShip(WeaponType.ROCKET_WEAPON, 15, 200, 400)
                 .finish();
     }
 }
